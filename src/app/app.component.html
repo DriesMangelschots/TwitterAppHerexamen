@@ -1,8 +1,8 @@
 <ion-app>
   <ion-menu side="start" menuId="first" contentId="content">
     <ion-header>
-      <ion-toolbar color="success">
-        <ion-title>Content</ion-title>
+      <ion-toolbar color="primary">
+        <ion-title>Menu Bar</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content color="light">
@@ -12,6 +12,18 @@
             <ion-icon [name]="pages.icon" slot="start"></ion-icon>
             {{pages.title}}
           </ion-item>
+          <ion-item>
+            <ion-buttons slot="start"  >
+              <ion-button (click)="toggleIcon()">
+                <ion-icon  [name]="iconMoon ? 'moon-outline' : 'sunny-outline'" slot="icon-only" color="medium"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+            <ion-label>
+              {{this.modeText}}
+            </ion-label>
+          </ion-item>
+
+
         </ion-menu-toggle>
       </ion-list>
     </ion-content>
