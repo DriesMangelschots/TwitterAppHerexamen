@@ -3,8 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+firebaseConfig : {
+    apiKey: 'AIzaSyDqkeCZzmvIkoQXmE3dX6ZvbDI1KHflncU',
+    authDomain: 'twitterapp-herexamen.firebaseapp.com',
+    projectId: 'twitterapp-herexamen',
+    storageBucket: 'twitterapp-herexamen.appspot.com',
+    messagingSenderId: '26297788263',
+    appId: '1:26297788263:web:250ab4baef56bd15ce71c2'
+  }
+  };
 
 /*
  * For easier debugging in development mode, you can import the following file
